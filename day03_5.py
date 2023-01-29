@@ -27,11 +27,14 @@
 #     print(i, '명')
 
 # 문제1 : 문자열에서 알파벳 o 의 갯수를 알려주세요
-문자열 = 'hello world, my name is python'
 
-for i in 문자열:
-    if i < len(문자열):
-        print()
+# 문자열 = 'hello world, my name is python'
+# o_count = 0
+
+# for i in 문자열:
+#     if i == 'o':
+#         o_count += 1
+# print(o_count)
         
 # 문제2 : 1월~12월을 출력하되 입력받은 월은 skip
 
@@ -40,25 +43,26 @@ for i in 문자열:
 
 # for i in range(1, 13):
 #     if (i == m):
-#         print('X')
+#         continue
 #     else:
 #         print(i,'월')
 #     i += 1
 
 # 문제3 : 1월~12월을 출력하되 입력받은 월로부터는 출력안함
+
 # m = int(input('월을 입력해주세요>>'))
 # i = 1
 
 # for i in range(1, 13):
-#     if (i < m):
-#         print(i,'월')
+#     if i == m:
+#         break
 #     else:
-#         print('X')
+#         print(i,'월'):
 #     i += 1
 
 # 문제4 : 구구단을 만들어주세요
 
-# for i in range(1, 10):
-#     for j in range(1, 10):
-#         print(f'{i} x {j} = {i*j}')
-#     print()
+for i in range(1, 10):
+    for j in range(1, 10):
+       print(i,'x',j,'=',i*j, end='\t')
+    print()
